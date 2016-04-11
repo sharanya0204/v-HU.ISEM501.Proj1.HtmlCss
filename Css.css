@@ -1,7 +1,7 @@
 ﻿body {
     height: 800px;
     /*border: 2px solid blue;*/
-    background-color:blanchedalmond;
+    background-color:lightcoral;
    
 }
 
@@ -13,7 +13,7 @@
 
 
 .navLinkSelect {
-    background-color: lightblue;
+    background-color:green;
     color: white;
     padding: 3px;
 }
@@ -36,7 +36,7 @@ footer {
 
 header
 {
-    background-color:blanchedalmond;
+    background-color:lightcoral;
     min-height:100px;
     vertical-align:bottom;
 }
