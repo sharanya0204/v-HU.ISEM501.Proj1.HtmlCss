@@ -1,0 +1,85 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>AboutUs Page</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="Css.css">
+</head>
+<body style="height:800px">
+    <header>
+        <img src="Global.png" width="100" />
+        <br />
+        <br />
+        <br />
+        <br />
+        <nav>
+            <a class="navLink" href="Home.html">Home</a>
+            <a class="navLinkSelect" href="AboutUs.html">About Us</a>
+            <a class="navLink" href="ContactUs.html">Contact Us</a>
+            <a class="navLink" href="Help.html">Help</a>
+            <a class="navLink" href="Products.html">Products</a>
+            <a class="navLink" href="Cart.html">Cart</a>
+            <a class="navLink" href="TaxCalculator.html">Tax/Shipping Calculator</a>
+        </nav>
+    </header>
+
+    <div class="content">
+        <h1>Tax/Shipping Calculatord</h1>
+        <p>
+            Rules
+            <ul>
+                <li>
+                    6% tax and 5% shipping &amp; handling till 100$
+                </li>
+                <li>
+                    4% tax and 3% shipping &amp; handling after 100$
+                </li>
+
+            </ul>
+        </p>
+        <p>
+        </p>
+        <h2> Enter your total purchase</h2>
+        <input type="text" id="txtPurAmount" />
+        <br />
+        <button type="button" onclick="CalculateTax()">Calculate</button>
+    </div>
+
+    <footer>
+        This is footer! Copyright@2016
+    </footer>
+
+    <script type="text/javascript">
+        function CalculateTax() {
+            //alert('Hi');
+            var inp = document.getElementById("txtPurAmount").value;
+            //check if the input is number? If not alert()
+            var inpNum = parseFloat(inp)
+            if (isNaN(inpNum)) {
+                alert('Please input numeric');
+                return;
+            }
+
+
+            //Implement logic to check if it is < 100
+            var final = 0;
+            if(inpNum < 100)
+            {
+                final = inpNum * 1.11;
+            }
+            else {
+                final = inpNum * 1.07;
+            }
+            alert('The final amount is ' + final);
+
+
+            //Alert the final cost!
+
+
+
+
+
+        }
+    </script>
+</body>
+</html>
