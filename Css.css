@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ﻿body {
     height: 800px;
     /*border: 2px solid blue;*/
@@ -39,4 +40,47 @@ header
     background-color:lightcoral;
     min-height:100px;
     vertical-align:bottom;
+=======
+﻿body {
+    height: 800px;
+    /*border: 2px solid blue;*/
+    background-color:lightcoral;
+   
+}
+
+.navLink {
+    background-color: blue;
+    color: white;
+    padding: 3px;
+}
+
+
+.navLinkSelect {
+    background-color:green;
+    color: white;
+    padding: 3px;
+}
+
+.content {
+    min-height: 80%;
+    height: 80%;
+    border: solid;
+    border-width: 1px;
+    border-left-color: blue;
+    background-color:silver;
+}
+
+
+footer {
+    background-color:purple;
+    min-height:100px;
+}
+
+
+header
+{
+    background-color:lightcoral;
+    min-height:100px;
+    vertical-align:bottom;
+>>>>>>> origin/master
 }
